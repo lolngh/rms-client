@@ -1,0 +1,30 @@
+<div class="text-center">
+    <h1 class="display-5 font-weight-bold">All ration shops to turn into business correspondents</h1>
+</div>
+<br>
+<blockquote class="blockquote text-center">
+    <p class="mb-0" style="background-color: sandybrown;">Unless interbank transactions increase, these fair price shops will 
+        not be able to serve their purpose. The idea is that the cardholder
+        of any bank can walk into a ration shop and deposit or withdraw money. 
+        The government intends to achieve a target of installing three lakh such
+        devices to computerise fair price shops by March 2017. The aim is to
+        fully computerise all 5.35 lakh fair price shops by March 2019 
+        by installing such ePoS devices.
+    </p>
+    <footer class="blockquote-footer">By Recent News </footer>
+</blockquote>
+<br><br><br>
+<form (ngSubmit)="updateRevenue()">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="revenueData">Revenue Value</label>
+        <input type="number" [(ngModel)]="revenue.revenue" class="form-control" id="revenueData" name="revenueData" placeholder="2000,20000,...">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Revenue</button>
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+

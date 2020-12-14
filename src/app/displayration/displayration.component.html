@@ -1,0 +1,46 @@
+<br>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Feature</th>
+        <th scope="col">Data Recorded</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-primary">
+        <th scope="row">Shop Name</th>
+        <td>{{ration.name}}</td>
+      </tr> 
+      <tr class="bg-info">
+        <th scope="row">Owner Name</th>
+        <td>{{ration.revenue.owner}}</td>
+      </tr> 
+      <tr class="bg-primary">
+        <th scope="row">Current Revenue</th>
+        <td>{{ration.revenue.revenue}}</td>
+      </tr> 
+      <tr class="bg-info">
+        <th scope="row">Address</th>
+        <td>{{ration.address}}</td>
+      </tr> 
+      <tr class="bg-primary">
+        <th scope="row">City</th>
+        <td>{{ration.city}}</td>
+      </tr> 
+      <tr class="bg-info">
+        <th scope="row">State</th>
+        <td>
+            {{ration.state}}</td>
+      </tr> 
+      <tr class="bg-primary">
+        <th scope="row">Country</th>
+        <td>{{ration.country}}</td>
+      </tr> 
+    </tbody>
+  </table>
+  <br>
+  <form class="form-inline my-2 my-lg-0" >
+    <button (click)="delete()" class="btn btn-danger mr-sm-2"  >Delete</button>
+    <a routerLink="/updateRation/{{ration.id}}" class="btn btn-info" >Update</a>
+  </form>
+  <br>

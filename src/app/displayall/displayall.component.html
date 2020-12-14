@@ -1,0 +1,19 @@
+<div *ngFor="let ration of rations; let i= index;">
+     <div class="card text-center">
+        <div class="card-header" style="background-color:rgb(158, 124, 92);">
+          Ration-Shop - {{i+1}}
+        </div>
+        <div class="card-body" style="background-color:rgb(180, 180, 228)">
+          <h5 class="card-title">
+            <a routerLink="/rationshop/{{ration.id}}">{{ration.name}}</a></h5>
+          <p class="card-text">{{ration.address}}</p>
+        </div>
+        <div class="card-footer" style="background-color:rgb(204, 204, 207);">
+          <a routerLink="/updateRevenue/{{ration.id}}" class="btn btn-warning">Update Revenue</a>
+        </div>
+     </div> 
+     <br>
+     <br>
+</div>
+
+   
